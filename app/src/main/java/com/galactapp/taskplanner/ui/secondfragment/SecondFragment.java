@@ -1,4 +1,4 @@
-package com.galactapp.taskplanner;
+package com.galactapp.taskplanner.ui.secondfragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.galactapp.taskplanner.R;
 import com.galactapp.taskplanner.databinding.FragmentSecondBinding;
 
 public class SecondFragment extends Fragment {

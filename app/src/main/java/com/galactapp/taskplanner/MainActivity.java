@@ -30,10 +30,16 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        // action bar é a barra superior que contem o titulo da aplicação e o menu
         setSupportActionBar(binding.toolbar);
 
+        // navigation component é um componente que permite navegar entre fragments
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+
+        // appBarConfiguration é usado para configurar a action bar para o NavController especificado
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
+
+        // setupActionBarWithNavController() é usado para configurar a action bar para o NavController especificado
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
         binding.fab.setOnClickListener(new View.OnClickListener() {
